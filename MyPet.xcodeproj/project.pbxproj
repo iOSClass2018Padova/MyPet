@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7B5EFC7F216CB7AB00A7E7F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFC7E216CB7AB00A7E7F5 /* AppDelegate.swift */; };
-		7B5EFC81216CB7AB00A7E7F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFC80216CB7AB00A7E7F5 /* ViewController.swift */; };
 		7B5EFC84216CB7AB00A7E7F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EFC82216CB7AB00A7E7F5 /* Main.storyboard */; };
 		7B5EFC86216CB7AF00A7E7F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EFC85216CB7AF00A7E7F5 /* Assets.xcassets */; };
 		7B5EFC89216CB7AF00A7E7F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EFC87216CB7AF00A7E7F5 /* LaunchScreen.storyboard */; };
 		7B5EFC94216CB7AF00A7E7F5 /* MyPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFC93216CB7AF00A7E7F5 /* MyPetTests.swift */; };
 		7B5EFC9F216CB7AF00A7E7F5 /* MyPetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFC9E216CB7AF00A7E7F5 /* MyPetUITests.swift */; };
+		7B5EFCAD216CBE2300A7E7F5 /* ListPeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCAC216CBE2300A7E7F5 /* ListPeopleController.swift */; };
+		7B5EFCB0216CBF0A00A7E7F5 /* ListPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCAF216CBF0A00A7E7F5 /* ListPeopleCell.swift */; };
+		7B5EFCB4216CC04100A7E7F5 /* PersonDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCB3216CC04100A7E7F5 /* PersonDetailController.swift */; };
+		7B5EFCB6216CC07800A7E7F5 /* PersonDetailCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCB5216CC07800A7E7F5 /* PersonDetailCells.swift */; };
+		7B5EFCB8216CC0CA00A7E7F5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCB7216CC0CA00A7E7F5 /* Person.swift */; };
+		7B5EFCBA216CC18D00A7E7F5 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCB9216CC18D00A7E7F5 /* Pet.swift */; };
+		7B5EFCBC216CD69200A7E7F5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCBB216CD69200A7E7F5 /* Extensions.swift */; };
 		B53B39C35932482888BEE617 /* Pods_MyPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025F481CFCE3CBEBBAE8060F /* Pods_MyPet.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +45,6 @@
 		5AC95DF28BEE7067FCA706A7 /* Pods-MyPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPet/Pods-MyPet.debug.xcconfig"; sourceTree = "<group>"; };
 		7B5EFC7B216CB7AB00A7E7F5 /* MyPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5EFC7E216CB7AB00A7E7F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B5EFC80216CB7AB00A7E7F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B5EFC83216CB7AB00A7E7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B5EFC85216CB7AF00A7E7F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5EFC88216CB7AF00A7E7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +55,13 @@
 		7B5EFC9A216CB7AF00A7E7F5 /* MyPetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5EFC9E216CB7AF00A7E7F5 /* MyPetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPetUITests.swift; sourceTree = "<group>"; };
 		7B5EFCA0216CB7AF00A7E7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5EFCAC216CBE2300A7E7F5 /* ListPeopleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeopleController.swift; sourceTree = "<group>"; };
+		7B5EFCAF216CBF0A00A7E7F5 /* ListPeopleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleCell.swift; sourceTree = "<group>"; };
+		7B5EFCB3216CC04100A7E7F5 /* PersonDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailController.swift; sourceTree = "<group>"; };
+		7B5EFCB5216CC07800A7E7F5 /* PersonDetailCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailCells.swift; sourceTree = "<group>"; };
+		7B5EFCB7216CC0CA00A7E7F5 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7B5EFCB9216CC18D00A7E7F5 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		7B5EFCBB216CD69200A7E7F5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D8C0469E1949B326C373B471 /* Pods-MyPet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPet.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPet/Pods-MyPet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				7B5EFC7E216CB7AB00A7E7F5 /* AppDelegate.swift */,
-				7B5EFC80216CB7AB00A7E7F5 /* ViewController.swift */,
+				7B5EFCBB216CD69200A7E7F5 /* Extensions.swift */,
+				7B5EFCB1216CBF2500A7E7F5 /* Models */,
+				7B5EFCAE216CBEEC00A7E7F5 /* ListPeople */,
+				7B5EFCB2216CBF2E00A7E7F5 /* PersonDetail */,
 				7B5EFC82216CB7AB00A7E7F5 /* Main.storyboard */,
 				7B5EFC85216CB7AF00A7E7F5 /* Assets.xcassets */,
 				7B5EFC87216CB7AF00A7E7F5 /* LaunchScreen.storyboard */,
@@ -130,6 +145,33 @@
 				7B5EFCA0216CB7AF00A7E7F5 /* Info.plist */,
 			);
 			path = MyPetUITests;
+			sourceTree = "<group>";
+		};
+		7B5EFCAE216CBEEC00A7E7F5 /* ListPeople */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EFCAC216CBE2300A7E7F5 /* ListPeopleController.swift */,
+				7B5EFCAF216CBF0A00A7E7F5 /* ListPeopleCell.swift */,
+			);
+			path = ListPeople;
+			sourceTree = "<group>";
+		};
+		7B5EFCB1216CBF2500A7E7F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EFCB7216CC0CA00A7E7F5 /* Person.swift */,
+				7B5EFCB9216CC18D00A7E7F5 /* Pet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B5EFCB2216CBF2E00A7E7F5 /* PersonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EFCB3216CC04100A7E7F5 /* PersonDetailController.swift */,
+				7B5EFCB5216CC07800A7E7F5 /* PersonDetailCells.swift */,
+			);
+			path = PersonDetail;
 			sourceTree = "<group>";
 		};
 		9290E13C5FAE0E8A8762063A /* Pods */ = {
@@ -323,8 +365,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B5EFC81216CB7AB00A7E7F5 /* ViewController.swift in Sources */,
+				7B5EFCBA216CC18D00A7E7F5 /* Pet.swift in Sources */,
+				7B5EFCB8216CC0CA00A7E7F5 /* Person.swift in Sources */,
+				7B5EFCB6216CC07800A7E7F5 /* PersonDetailCells.swift in Sources */,
+				7B5EFCBC216CD69200A7E7F5 /* Extensions.swift in Sources */,
+				7B5EFCAD216CBE2300A7E7F5 /* ListPeopleController.swift in Sources */,
+				7B5EFCB4216CC04100A7E7F5 /* PersonDetailController.swift in Sources */,
 				7B5EFC7F216CB7AB00A7E7F5 /* AppDelegate.swift in Sources */,
+				7B5EFCB0216CBF0A00A7E7F5 /* ListPeopleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +552,10 @@
 				DEVELOPMENT_TEAM = KLXGCD4J97;
 				INFOPLIST_FILE = MyPet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanovecchiati.MyPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -521,7 +572,10 @@
 				DEVELOPMENT_TEAM = KLXGCD4J97;
 				INFOPLIST_FILE = MyPet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanovecchiati.MyPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -536,7 +590,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyPetTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanovecchiati.MyPetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -552,7 +610,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyPetTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanovecchiati.MyPetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -567,7 +629,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyPetUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanovecchiati.MyPetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -582,7 +648,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyPetUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanovecchiati.MyPetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
