@@ -20,6 +20,7 @@
 		7B5EFCB8216CC0CA00A7E7F5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCB7216CC0CA00A7E7F5 /* Person.swift */; };
 		7B5EFCBA216CC18D00A7E7F5 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCB9216CC18D00A7E7F5 /* Pet.swift */; };
 		7B5EFCBC216CD69200A7E7F5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCBB216CD69200A7E7F5 /* Extensions.swift */; };
+		7B5EFCC0217463B700A7E7F5 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EFCBF217463B700A7E7F5 /* RealmUtils.swift */; };
 		B53B39C35932482888BEE617 /* Pods_MyPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025F481CFCE3CBEBBAE8060F /* Pods_MyPet.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		7B5EFCB7216CC0CA00A7E7F5 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7B5EFCB9216CC18D00A7E7F5 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		7B5EFCBB216CD69200A7E7F5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B5EFCBF217463B700A7E7F5 /* RealmUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
 		D8C0469E1949B326C373B471 /* Pods-MyPet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPet.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPet/Pods-MyPet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			children = (
 				7B5EFC7E216CB7AB00A7E7F5 /* AppDelegate.swift */,
 				7B5EFCBB216CD69200A7E7F5 /* Extensions.swift */,
+				7B5EFCBF217463B700A7E7F5 /* RealmUtils.swift */,
 				7B5EFCB1216CBF2500A7E7F5 /* Models */,
 				7B5EFCAE216CBEEC00A7E7F5 /* ListPeople */,
 				7B5EFCB2216CBF2E00A7E7F5 /* PersonDetail */,
@@ -369,6 +372,7 @@
 				7B5EFCB8216CC0CA00A7E7F5 /* Person.swift in Sources */,
 				7B5EFCB6216CC07800A7E7F5 /* PersonDetailCells.swift in Sources */,
 				7B5EFCBC216CD69200A7E7F5 /* Extensions.swift in Sources */,
+				7B5EFCC0217463B700A7E7F5 /* RealmUtils.swift in Sources */,
 				7B5EFCAD216CBE2300A7E7F5 /* ListPeopleController.swift in Sources */,
 				7B5EFCB4216CC04100A7E7F5 /* PersonDetailController.swift in Sources */,
 				7B5EFC7F216CB7AB00A7E7F5 /* AppDelegate.swift in Sources */,
@@ -551,7 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KLXGCD4J97;
 				INFOPLIST_FILE = MyPet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KLXGCD4J97;
 				INFOPLIST_FILE = MyPet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

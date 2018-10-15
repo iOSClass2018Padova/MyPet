@@ -11,7 +11,6 @@ import UIKit
 protocol ListPeopleDelegate: class {
     func reloadContactCell()
     func addPerson(person : Person)
-    func removePerson(person : Person)
 }
 
 class ListPeopleController: UIViewController {
@@ -100,15 +99,31 @@ extension ListPeopleController : UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("Deleted")
+            
+            let alert = UIAlertController(title: "Elimina", message: "Sei sicuro di voler rimuovere l'utente?", preferredStyle: .alert)
+            let no = UIAlertAction(title: "No", style: .cancel, handler: nil)
+            alert.addAction(no)
+            let yes = UIAlertAction(title: "Si", style: .default, handler: { action in
+                for pet in self.listOfPerson[indexPath.row].getPets() {
+                    pet.remove()
+                }
+                self.listOfPerson[indexPath.row].remove()
+                self.listOfPerson.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            })
+            alert.addAction(yes)
+            self.present(alert, animated: true, completion: nil)
+            
+            
+        }
+    }
+    
 }
 
 extension ListPeopleController : ListPeopleDelegate {
-    
-    
-    func removePerson(person: Person) {
-        listOfPerson.remove(at: selectedIndexPath.row)
-        tableView.deleteRows(at: [selectedIndexPath], with: .automatic)
-    }
     
     func addPerson(person : Person) {
         if addNewPerson {

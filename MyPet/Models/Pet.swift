@@ -9,27 +9,22 @@
 import UIKit
 import RealmSwift
 
-enum Gender : Int {
-    case male = 0
-    case female
-}
-
 @objcMembers class Pet: Object {
     
     dynamic var image : Data?
     
     dynamic var name : String?
     dynamic var type : String?
-    dynamic var gender : Int?
+    dynamic var gender : String?
     
     dynamic var id : String!
     
-    convenience init(name : String? = nil, type: String? = nil, gender: Gender? = nil, image: Data? = nil) {
+    convenience init(name : String? = nil, type: String? = nil, gender: String? = nil, image: Data? = nil) {
         self.init()
         
         self.name = name
         self.type = type
-        self.gender = gender?.rawValue
+        self.gender = gender
         
         self.image = image
         
@@ -38,7 +33,7 @@ enum Gender : Int {
         
     }
     
-    func changeData(in realm: Realm = try! Realm(), name : String? = nil, type: String? = nil, gender: Int? = nil, image: Data? = nil, pet: Pet? = nil) {
+    func changeData(in realm: Realm = try! Realm(configuration: RealmUtils.config), name : String? = nil, type: String? = nil, gender: String? = nil, image: Data? = nil, pet: Pet? = nil) {
         do {
             try realm.write {
                 
@@ -54,7 +49,7 @@ enum Gender : Int {
     }
     
     
-    func add(in realm: Realm = try! Realm()) {
+    func add(in realm: Realm = try! Realm(configuration: RealmUtils.config)) {
         do {
             try realm.write {
                 realm.add(self)
@@ -62,11 +57,11 @@ enum Gender : Int {
         } catch {}
     }
     
-    static func all(in realm: Realm = try! Realm()) -> [Person] {
+    static func all(in realm: Realm = try! Realm(configuration: RealmUtils.config)) -> [Person] {
         return Array(realm.objects(Person.self))
     }
     
-    func remove(in realm: Realm = try! Realm()) {
+    func remove(in realm: Realm = try! Realm(configuration: RealmUtils.config)) {
         do {
             try realm.write {
                 realm.delete(self)

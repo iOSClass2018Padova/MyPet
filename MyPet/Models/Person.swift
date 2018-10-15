@@ -16,10 +16,12 @@ import RealmSwift
     dynamic var name : String?
     dynamic var surname : String?
     dynamic var mobile : String?
+    dynamic var email : String?
+
     
     dynamic var id : String!
     
-    let pets : List<Pet> = List<Pet>()
+    private let pets : List<Pet> = List<Pet>()
     
     
     convenience init(name : String? = nil, surname: String? = nil, mobile: String? = nil, image: Data? = nil) {
@@ -45,7 +47,27 @@ import RealmSwift
         return fullName
     }
     
-    func changeData(in realm: Realm = try! Realm(), name : String? = nil, surname: String? = nil, mobile: String? = nil, image: Data? = nil, person: Person? = nil) {
+    func getPets() -> [Pet] {
+        return Array(pets)
+    }
+    
+    func addingPet(in realm: Realm = try! Realm(configuration: RealmUtils.config), pet : Pet) {
+        do {
+            try realm.write {
+                pets.insert(pet, at: 0)
+            }
+        }catch {}
+    }
+    
+    func removePet(in realm: Realm = try! Realm(configuration: RealmUtils.config), index: Int) {
+        do {
+            try realm.write {
+                self.pets.remove(at: index)
+            }
+        }catch {}
+    }
+    
+    func changeData(in realm: Realm = try! Realm(configuration: RealmUtils.config), name : String? = nil, surname: String? = nil, mobile: String? = nil, image: Data? = nil, person: Person? = nil) {
         do {
             try realm.write {
                 
@@ -61,7 +83,7 @@ import RealmSwift
     }
     
     
-    func add(in realm: Realm = try! Realm()) {
+    func add(in realm: Realm = try! Realm(configuration: RealmUtils.config)) {
         do {
             try realm.write {
                 realm.add(self)
@@ -69,11 +91,11 @@ import RealmSwift
         } catch {}
     }
     
-    static func all(in realm: Realm = try! Realm()) -> [Person] {
+    static func all(in realm: Realm = try! Realm(configuration: RealmUtils.config)) -> [Person] {
         return Array(realm.objects(Person.self))
     }
     
-    func remove(in realm: Realm = try! Realm()) {
+    func remove(in realm: Realm = try! Realm(configuration: RealmUtils.config)) {
         do {
             try realm.write {
                 realm.delete(self)
